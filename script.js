@@ -29,7 +29,8 @@ function generatePassword() {
     alert("This is a required field, click on 'Generate Password'");
     return
   } else if (passwordLength < 8 || passwordLength > 128) {
-    passwordLength = prompt("You must select a value between 8 and 128")
+    alert("You must select a value between 8 and 128, click on 'Generate Password'");
+    return
     console.log(passwordLength);
   } else {
     confirmLowerCase = confirm("Would you like to include lowercase letters?");
